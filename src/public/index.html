@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DeveloperIQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">Welcome to DeveloperIQ</div>
+    <p>Select the developer, project, and metric to calculate productivity.</p>
+    <div class="form-container">
+        <form id="metricForm">
+            <div class="dropdown">
+                <label for="developerName">Developer:</label>
+                <select id="developerName"></select>
+            </div>
+            <div class="dropdown">
+                <label for="projectName">Project:</label>
+                <select id="projectName"></select>
+            </div>
+            <div class="dropdown">
+                <label for="metric">Metric:</label>
+                <select id="metric"></select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="results"></div>
+    <button id="resetBtn" style="display: none;">Reset</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

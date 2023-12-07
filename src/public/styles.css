@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
+
+.form-container {
+    margin: 20px;
+}
+
+.dropdown {
+    margin-bottom: 15px;
+}
+
+select, button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 250px;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f6b;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.result-title {
+    font-size: 1em; /* Set the desired font size for the title */
+}
+
+.response-data {
+    font-size: 1.5em; /* Set the desired font size for the response data */
+}
