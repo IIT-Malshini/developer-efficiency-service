@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'acr-developeriq'
-        repository: '$(imageRepo0'
+        repository: '$(imageRepo0)'
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourceDirectory)/Dockerfile'
         tags: |

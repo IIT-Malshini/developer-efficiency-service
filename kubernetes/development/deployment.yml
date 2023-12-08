@@ -19,3 +19,18 @@ spec:
         image: acr-developeriq:developer-efficiency-service
         ports:
         - containerPort: 3000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    name: developer-efficiency-service
+spec:
+    type: LoadBalancer
+    ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000 
+    selector:
+        app: developer-efficiency-service
