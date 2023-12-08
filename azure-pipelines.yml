@@ -9,6 +9,7 @@ resources:
 - repo: self
 
 variables:
+  imageRepo: developer-efficiency-service
   tag: '$(Build.BuildId)'
 
 stages:
@@ -18,13 +19,13 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: ubuntu-latest
+      name: Default
     steps:
     - task: Docker@2
       displayName: Build an image
       inputs:
         containerRegistry: 'acr-developeriq'
-        repository: '$(imageRepo0)'
+        repository: '$(imageRepo)'
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourceDirectory)/Dockerfile'
         tags: |
